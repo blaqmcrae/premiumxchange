@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+  padding: 50px 15px;
+    background-image:linear-gradient(170deg, black, gold, white, gold, black);
+    /* color: aquamarine; */
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+/* FIRST SECTION */
+
+.experiment{
+  color: blue;
+  font-size: 1rem;
+}
+.experiment2{
+  font-family: cursive;
+}
+
+.intro{
+    text-align: center;
+    margin: 200px 100px;
+}
+.intro1{ color: aquamarine;
+    font-style: arial;
+    font-size: 4rem;
+    font-weight: 650;
+    margin: 30px 0;
+}
+h4{
+    color: #6498d7;
+}
+
+h6{
+  font-family: "Poppins", Sans-serif;
+}
+.headingss{
+  font-family:'Open Sans', sans-serif;
+}
+.emph1{
+  color: gold;
+}
+.emph{color: black;
+}
+h2{ font-family:Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 10px 0;
+    color: #6498d7;
+}
+.first-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    padding: 0 7%;
+    margin-top: 6rem;
+}
+.nftgif{
+    width: 95%;
+    height: 95%;
+    padding-left: 15%;
+
+}
+.second-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    padding: 7%;
+    margin-top:  6rem;
+}
+.phone-image{
+    transform: rotate(-13deg);
+    width: 75%;
+    height: 90%;
+}
+.motto{
+    color: #6498d7;
+    margin-bottom: 1.5rem;
+}
+/* BUTTON CSS */
+
+a.boton{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 1.125em;
+    border-radius: 99px;
+    transition: 0.8s ease-in-out;
+  }
+  
+  .boton > div {
+    position: relative;
+    pointer-events: none;
+    border-radius: 99px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  }
+  
+  .boton:hover {
+    transform: scale(0.85);
+    box-shadow: 0 0 20px black, 0 0 40px gold, 0 0 100px white(6, 2, 20);
+    transition-timing-function: cubic-bezier(0.34, 2, 0.64, 1);
+  }
+  
+  .boton:hover .gradient-button {
+    background-image: linear-gradient(180deg, gold, black);
+    color:white;
+    box-shadow: 0 0 0 #fff;
+  }
+  
+  .boton:hover .gradient-border {
+    opacity: 0;
+  }
+  
+  .gradient-wrapper {
+    border-radius: 9999px;
+    padding: 1px;
+    margin: -1px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    isolation: isolate;
+    transform: translateZ(10px);
+    pointer-events: none;
+  }
+  
+  .gradient-border {
+    animation: gradientBorderAnimation 5s linear infinite;
+    filter: blur(6px);
+    background: conic-gradient(
+        transparent 135deg,
+        #fff 180deg,
+        transparent 255deg
+      ),
+      conic-gradient(transparent -45deg, #fff 0deg, transparent 75deg);
+    transform-origin: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    display: block;
+  }
+  
+  .gradient-children {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .gradient-button {
+    padding: 1rem 2rem;
+    color: black;
+    border-radius: 24px;
+    transition: 0.15s ease-in-out;
+  }
+  
+  @keyframes gradientBorderAnimation {
+    from {
+      transform: scaleX(8) scaleY(1.5) rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: scaleX(8) scaleY(1.5) rotate(1turn);
+      opacity: 1;
+    }
+  }
+  
+  small,
+  small a {
+    color: #444;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+  
+  small a {
+    text-decoration: underline;
+  }
+  
+  small a:hover {
+    color: #777;
+  }
+  .nav-link{
+    color: aquamarine;
+  }
+ 
+/* STAKING SECTION */
+.staking-text{
+  text-align: left;
+}
+.staking-div{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr;
+  grid-gap: 1em;
+  padding: 0 7%;
+}
+.prices{
+  font-weight: bold;
+  margin: 10px 0;
+}
+.price-div{
+  border: solid;
+  border-radius: 16px;
+  border-color: white;
+  padding-top: 11.5%;
+  padding-bottom: 10%;}
+
+  .price-img{
+      height: 50px;
+      width: auto;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  .heading-tags{
+    font-weight: bold;
+  }
+  
+  /* Investment-section*/
+  .awesome-features{
+    margin-top: 50px;
+    text-align: left;
+    padding: 0 7%;
+    padding-top: 5%;
+  }
+  .investment-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr ;
+    text-align: center;
+    padding: 0 7%;
+    padding-top: 2%;
+    
+  }
+  .investment-texts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .investment-div{
+  /* background-color: whitesmoke; */
+  border: solid;
+  border-radius: 16px;
+  border-color: white;
+  padding-top: 11.5%;
+  padding-bottom: 10%;
+  height:auto;
+  }
+  .phone-image1{
+    transform: rotate(13deg);
+    height: 600px;
+    width: 300px;
+  }
+
+  /* SUBCRIBE OPTION */
+  .subscribe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:25px;
+    padding: 3% 7%;
+    border: solid;
+    border-color:white;
+    border-radius: 20px;
+    height: 300px;
+    margin:5% 7%;
+  }
+  .subscribe-h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid gold;
+    border-radius: 16px;
+  }
+  
+
+
+  #footer {
+    color: white;
+   text-align: center;
+  }
+  .bottom-title{
+    color: goldenrod;
+  }
+  .fa-brands{
+    margin: 10px;
+    text-transform: lowercase;
+  }
+  .fa-brands:hover{
+    color: #6498d7;
+  }
+  .fa-brands:active{
+    color: gold;
+  }
+  .contact-center{
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1100px) {
+    h4{
+      color: goldenrod;
+    }
+    .intro{
+      margin: 100px 75px;
+    }
+    .intro1{
+    font-size: 3rem;
+    font-weight: 600;
+    }
+    .nftgif{
+      width: 90%;
+      height: 85%;
+  }
+  .first-grid{
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .second-grid{
+    text-align: center;
+    display: inline-block;
+    padding: 2%;
+  }
+  .phone-image{
+    transform: none;
+    width: 70%;
+    height: 75%;
+}
+.aboutUs{
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.staking-plans{
+  text-transform: uppercase;
+  font-family:Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.staking-div{
+  padding: 2%;
+
+  display: inline-block;
+}
+.staking-text{
+  text-align: left;
+  margin: 0;
+}
+.price-div{
+ align-self: center;
+ margin:10px 20%;
+ width:60%;
+}
+.investment-options{
+  display: inline-block;
+}
+.phone-image1{
+  transform: none;
+}
+  }
+
+
+  @media (max-width: 800px) {
+    .first-h4{
+      font-size: 18px;
+    }
+    .intro1{
+      margin: 5px 0;
+      font-size:21px;
+      font-weight:600;
+      text-align: center;
+    }
+    .intro-h6{
+      margin-top: 5px;
+      font-size: 8px;
+      color: black;
+    }
+    .intro{
+      margin-bottom: 20px;
+    }
+    .first-grid{
+      margin-top: 5px;
+    }
+    .headingss{
+      font-size: 21px;
+    }
+    .first-text{
+      font-size: small;
+      font-weight: normal;
+    }
+    .first-grid-div{
+      margin-bottom: 30px;
+    }
+    .nftgif{
+      height: 90%;
+      width: 95%;
+    }
+    .second-grid{
+      padding:3%;
+    }
+    .motto{
+      font-size: 18px;
+    }
+    .bold{
+      font-weight: normal;
+    }
+    .staking-plans{
+      font-size: 21px;
+    }
+    .subscribe-h1{
+      font-size: 25px;
+    }
+    .subscribe{
+      display: inline-block;
+      margin: 2.5% 3.5%;
+      height: auto;
+    }
+    .motto{
+      font-size: 18px;
+    }
+  }
